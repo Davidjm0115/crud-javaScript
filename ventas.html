@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+<!-- JavaScript Bundle with Popper -->
+    <script src="main.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stles.css"/>
+    <title></title>
+  </head>
+  <body>
+
+<header>
+  <div id ="logo">
+      <img src="./img/logo.png" id="qatar" >
+  </div>
+</header>
+
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        <a class="nav-link" href="clientes2.html">Clientes</a>
+        <a class="nav-link" href="ventas2.html">ventas</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="row">
+
+  <section class="d-flex justify-content-center align-items-center">
+    <div class="card shadow col-xs-12 col-sm-6 col-md-6 col-lg-4   p-4"> 
+        <div class="mb-4 d-flex justify-content-start align-items-center">
+          
+            <h4>  <i class="bi bi-chat-left-quote"></i> &nbsp; Ventas</h4>
+        </div>
+        <div class="mb-1">
+            <form id = "contacto" >
+              <div>
+                <label for="nombre"> <i class="bi bi-person-fill"></i> ID</label>
+                <input type="number" class="form-control" name="id" id="id" placeholder= "ej: 1" required>
+                <div class="id text-danger "></div>
+            </div>
+        </div>
+                <div class="mb-4"> 
+                    <div>
+                        <label for="fecha"> <i class="bi bi-person-fill"></i> Fecha</label>
+                        <input type="date" class="form-control" name="fecha" id="fecha" required>
+                        <div class="fecha text-danger "></div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                <div >
+                  <label for="cliente"> <i class="bi bi-person-bounding-box"></i> Cliente</label>
+                  <input type="text" class="form-control" name="cliente" id="cliente" placeholder= "ej: David Jurado" required>
+                  <div class="cliente text-danger"></div>
+              </div>
+            </div>
+                <div class="mb-4">
+                  <label for="producto"> <i class="bi bi-person-bounding-box"></i> Producto</label>
+                  <select class="form-select" aria-label="Default select example" id="producto">
+                    <option selected>Elija el producto</option>
+                    <option value="chevrolet 1">One</option>
+                    <option value="chevrolet 2">Two</option>
+                    <option value="chevrolet 3">Three</option>
+                  </select>
+                    
+                </div> 
+                <div class = "mb-4">
+                  <label for="valor"> <i class="bi bi-person-bounding-box"></i> Valor unitario</label>
+                  <input type="text" class="form-control" name="valor" id="valor" placeholder= "ej: 50.000.000" required>
+                  <div class="valor text-danger"></div>
+              </div>
+              
+              <div class="mb-4">
+                <label for="cliente"> <i class="bi bi-person-bounding-box"></i> Cantidad</label>
+                <select class="form-select" aria-label="Default select example" id="cantidad">
+                  <option selected>Cantidad</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+                  
+              </div> 
+                
+            <div class="mb-2 ">
+              <button type="button" id ="button" class="col-12 btn btn-primary " onclick="eliminarIdVentas()">
+                  <span>Eliminar </span><i id="icono" class="bi bi-cursor-fill "></i>
+              </button>
+          </div> 
+          <div class="mb-2 ">
+            <button type="button" id ="button" class="col-12 btn btn-primary " onclick="crearVentas()">
+                <span>crear</span><i id="icono" class="bi bi-cursor-fill "></i>
+            </button>
+        </div> 
+                          
+            </form>
+        </div>
+    </div>
+</section>
+<hr>
+
+<button type="button" name="button" onclick="agregarVentas()"> Ver lista</button>
+<div id = "listaventas">
+
+</div>
+
+<footer>
+<h4> 2022 © </h4>
+</footer>
+
+  </body>
+</html>
+
+<!-- 
+    Fecha
+    Cliente
+    producto
+    Valor unitario
+    Cantidad
+-->

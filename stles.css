@@ -1,0 +1,56 @@
+header{
+
+    padding: 50px;
+    background-color: #CAD8D8;
+    text-align: center;
+
+}
+#qatar{
+  max-width: 10%;
+  max-height: 10%;
+
+}
+#logo{
+    background-color: #CAD8D8;
+    text-align: center;
+    margin-top: 10px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+section{
+  font-family: arial;
+  flex:70%;
+  background-color: white;
+  page-break-after: 20px;
+}
+
+section div{
+
+  background-color: white;
+}
+footer{
+    color: white;
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+}
+.contenedor-parrafos{
+  display: flex;
+  justify-content: space-between;
+}
+.contenedor-parrafos > p{
+  margin: 50px;
+  padding: 30px;
+  text-align: justify;
+  line-height: 30px;
+}
+img{
+
+  max-width: 50%;
+  max-height: 50%;
+
+}
